@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f7fc; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 1em;
+}
+
+nav a {
+  margin-right: 15px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.my-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.myform div {
+  margin-bottom: 20px;
+}
+
+.myform label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.myform input[type="text"],
+.myform input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.myform input[type="text"]:focus,
+.myform input[type="password"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.myform .error {
+  color: red;
+  font-size: 12px;
+}
+
+.myform input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.myform input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* ========================================= */
+
+/* Navbar styling */
+nav {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Navbar links styling */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change link color on hover */
+nav a:hover {
+  background-color: #45a049;
+  border-radius: 4px;
+}
+
+/* Styling for when the user is logged in */
+nav a:active {
+  background-color: #388e3c;
+}
+
+/* =================================================== */
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Styling for the Delete button */
+button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+button:active {
+  background-color: #b71c1c; /* Even darker red on click */
+}
+
+/* Confirm box to make sure user wants to delete */
+button:focus {
+  outline: none;
+}
+
+/* ==================================== */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  width: 200px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* On focus, change border color */
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+  background-color: #f1f1f1;
+}
+
+/* Style for each option inside the dropdown */
+option {
+  padding: 8px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Optional: change background color on hover */
+option:hover {
+  background-color: #f2f2f2;
+}
+
+/* Optional: style disabled options */
+option:disabled {
+  background-color: #e0e0e0;
+  color: #b0b0b0;
+}
+
+/* ==================================== */

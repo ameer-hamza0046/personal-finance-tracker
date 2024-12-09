@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<h2>Your Expenses Overview</h2>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+    </tr>
+    {% for expense in expenses %}
+    <tr>
+        <td>{{ expense.amount }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.date.strftime('%Y-%m-%d') }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{ url_for('add_expense') }}">Add New Expense</a>
+{% endblock %}
